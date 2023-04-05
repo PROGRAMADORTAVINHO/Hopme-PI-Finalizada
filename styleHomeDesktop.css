@@ -30,7 +30,9 @@ body {
   width: 90%;
   height: 550px;
 }
-.containerNoticia {
+.containerNoticia{
+  width: 100%;
+  height: 100%;
   background-color: rgba(65, 214, 206, 0.349);
 }
 
@@ -56,7 +58,8 @@ body {
 /* 2º Carrocel  */
 .tituloInformacoes {
   width: 90%;
-  top: 25%;
+  top: 30%;
+  padding-left: 10%;
   display: flex;
   justify-content: center;
   justify-items: flex-end;
@@ -76,7 +79,7 @@ ul {
 }
 
 .container {
-  margin-top: 5%;
+  margin-top: 7%;
   margin-left: 15%;
   display: flex;
   justify-content: center;
@@ -244,17 +247,20 @@ ul {
   display: flex;
   width: 100%;
   height: 50%;
+
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .PrimeiraNoticiaFoto {
-  background-color: black;
-  margin-left: 1%;
   width: 90%;
   height: 350px;
 }
 .PrimeiraNoticiaDescricao {
-  margin-left: 1%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   height: 100%;
   text-align: justify;
 }
@@ -283,7 +289,6 @@ ul {
   display: flex;
   width: 100%;
   height: 50%;
-  padding-bottom: 5%;
   padding-left: 5%;
 }
 .ad {
@@ -299,22 +304,24 @@ hr{
   display: none;
 }
 .SegundaParteNoticias{
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   width: 100%;
   height: 100%;
 }
 .SegundaParteNoticia{
+  padding-right: 2%;
   display: flex;
   margin-top: 2%;
 }
 .SegundaParteNoticiaFoto {
-  background-color: black;
-  width: 100px;
-  height: 100px;
+  width: 10%;
+  height: 10%;
 }
 .SegundaParteNoticiaDescricao {
   width: 80%;
-  padding-left: 5%;
+  padding-left: 35%;
   text-align: justify;
 }
 .teste{
