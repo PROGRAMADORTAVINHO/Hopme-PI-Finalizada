@@ -1,0 +1,325 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+  min-width: 1024px;
+  margin: 0 auto;
+}
+
+.Titulos {
+  color: black;
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Textos {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+.PrimeiroCarrocel {
+  width: 100%;
+  height: 150px;
+}
+
+.SegundoCarrocel {
+  margin-left: 5%;
+  width: 90%;
+  height: 550px;
+}
+.containerNoticia {
+  background-color: rgba(65, 214, 206, 0.349);
+}
+
+/* Carrossel*/
+#slider1 {
+  width: 100%;
+  height: 80%;
+}
+
+#slider1 img {
+  opacity: 0;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 40%;
+  transition: opacity 800ms;
+}
+
+#slider1 img.selected {
+  opacity: 1;
+}
+
+/* 2º Carrocel  */
+.tituloInformacoes {
+  width: 90%;
+  top: 25%;
+  display: flex;
+  justify-content: center;
+  justify-items: flex-end;
+  position: relative;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin-top: 5%;
+  margin-left: 15%;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+/* Gallery list layout */
+
+.gallery {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+/* Individual item a.k.a "slide" structure */
+/* Tamanho do carrosel */
+
+.slide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  width: 90%;
+  height: 90%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  padding: 10%;
+  gap: 0.5rem;
+}
+
+/* Slide states */
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+  transform: translate(0px) scale(1);
+}
+
+.slide.lqueue {
+  opacity: 0.64;
+  z-index: 1;
+  transform: translate(-100%) scale(0.64);
+}
+
+.slide.rqueue {
+  opacity: 0.64;
+  z-index: 1;
+  transform: translate(100%) scale(0.64);
+}
+
+.slide.lhidden {
+  opacity: 0;
+  z-index: auto;
+  transform: translate(-160%) scale(0);
+}
+
+.slide.rhidden {
+  opacity: 0;
+  z-index: auto;
+  transform: translate(160%) scale(0);
+}
+
+.slide.lqueue *,
+.slide.rqueue *,
+.slide.lhidden *,
+.slide.rhidden * {
+  pointer-events: none;
+}
+
+.slide.lqueue *::selection,
+.slide.rqueue *::selection,
+.slide.lhidden *::selection,
+.slide.rhidden *::selection {
+  background-color: transparent;
+}
+
+/* Slide specifics */
+/* foto */
+.foto {
+  object-position: top;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 50%;
+}
+
+/* Descrição */
+.slide--name,
+.slide--description {
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+}
+
+.slide--description p {
+  margin-top: 5%;
+}
+
+.button {
+  justify-content: center;
+  width: 70px;
+  height: 10%;
+  background-color: rgb(18, 164, 221);
+  border-radius: 10%;
+  color: black;
+  border: solid 2px rgb(16, 144, 194);
+}
+.slide button {
+  margin-top: 5%;
+  margin-left: 25%;  
+}
+.button a {
+  font-size: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.fotofundo {
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s;
+  width: 70%;
+  height: 50%;
+  gap: 0.5rem;
+}
+
+.slide--description {
+  width: 85%;
+  height: 50%;
+  position: absolute;
+  z-index: 2;
+  background-color: rgb(78, 214, 65);
+  transition: all 0.3s;
+  margin-left: 30%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.slide--description .Titulos{
+  padding-top: 5%;
+  text-align: center;
+}
+.slide--description .Textos{
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Nótica */
+
+.tituloNoticia {
+  margin-left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  justify-items: flex-end;
+  position: relative;
+}
+.TresNoticia{
+  margin-top: 5%;
+  display: flex;
+}
+.PrimeiraNoticia {
+  display: flex;
+  width: 100%;
+  height: 50%;
+}
+.PrimeiraNoticiaFoto {
+  background-color: black;
+  margin-left: 1%;
+  width: 90%;
+  height: 350px;
+}
+.PrimeiraNoticiaDescricao {
+  margin-left: 1%;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  text-align: justify;
+}
+.PrimeiraNoticiaDescricao .Titulos {
+  display: flex;
+  justify-content: center;
+}
+.SegundaNoticia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+.SegundaNoticiaFoto {
+  background-color: black;
+  width: 95%;
+  height: 250px;
+}
+.SegundaNoticiaDescricao {
+  justify-content: center;
+  width: 95%;
+  height: 100%;
+  text-align: justify;
+}
+.Partead{
+  display: flex;
+  width: 100%;
+  height: 50%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+.ad {
+  background-color: black;
+  width: 90%;
+  height: 250px;
+}
+hr{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.descriçãoTablet{
+  display: none;
+}
+.SegundaParteNoticias{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.SegundaParteNoticia{
+  display: flex;
+  margin-top: 2%;
+}
+.SegundaParteNoticiaFoto {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+.SegundaParteNoticiaDescricao {
+  width: 80%;
+  padding-left: 5%;
+  text-align: justify;
+}
+.teste{
+  display: flex;
+}
+.teste1{
+  display: flex;
+}
