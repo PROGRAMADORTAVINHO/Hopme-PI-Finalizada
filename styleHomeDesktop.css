@@ -10,14 +10,14 @@ body {
 .Titulos {
   color: black;
   font-family: 'Kanit', sans-serif;
-  font-size: 15px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .Textos {
   color: black;
   font-family: 'Montserrat', sans-serif;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 .PrimeiroCarrocel {
@@ -182,7 +182,7 @@ ul {
 
 .button {
   justify-content: center;
-  width: 70px;
+  width: 80px;
   height: 10%;
   background-color: rgb(18, 164, 221);
   border-radius: 10%;
@@ -191,12 +191,12 @@ ul {
 }
 
 .slide button {
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 40%;
 }
 
 .button a {
-  font-size: 10px;
+  font-size: 15px;
   text-decoration: none;
   color: inherit;
 }
@@ -205,24 +205,41 @@ ul {
   position: absolute;
   z-index: 1;
   transition: all 0.3s;
-  width: 70%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
   gap: 0.5rem;
 }
 
 .slide--description {
-  width: 70%;
-  height: 85%;
+  width: 80%;
+  height: 80%;
   position: absolute;
   z-index: 2;
   background-color: rgb(78, 214, 65);
   transition: all 0.3s;
-  margin-left: 40%;
+  margin-left: 35%;
   border-top-left-radius: 40%;
   border-bottom-right-radius: 40%;
 }
 
-.slide--description .Titulos {
+.slide--description .DescriçãoDesktop {
+  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Titulos2{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+}
+
+.DescriçãoDesktop {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.slide--description .TitulosCarrocel {
   padding-top: 5%;
   text-align: center;
 }
@@ -262,7 +279,6 @@ ul {
 }
 
 .PrimeiraNoticiaDescricao {
-  padding-top: 5%;
   padding-left: 5%;
   padding-right: 5%;
   justify-content: center;
@@ -296,16 +312,21 @@ ul {
 }
 
 .Partead {
-  display: flex;
   width: 100%;
-  height: 50%;
   padding-left: 5%;
 }
 
-.ad {
-  background-color: black;
+.DescriçãoAd {
+  text-align: center;
   width: 90%;
-  height: 250px;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+.ad video {
+  width: 90%;
 }
 
 hr {
@@ -318,6 +339,7 @@ hr {
 }
 
 .SegundaParteNoticias {
+  margin-bottom: 500px;
   padding-left: 2%;
   padding-right: 2%;
   display: flex;
@@ -326,18 +348,26 @@ hr {
 }
 
 .SegundaParteNoticia {
-  padding-right: 2%;
+  background-color: red;
   display: flex;
   margin-top: 2%;
 }
-
+.SegundaParteNoticiaFoto{
+  background-color: aqua;
+  width: 50%;
+}
+.Titulos3{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+}
 .SegundaParteNoticiaFoto img {
   width: 100%;
 }
 
 .SegundaParteNoticiaDescricao {
-  width: 55%;
-  padding-left: 10%;
+  background-color: blueviolet;
+  width: 50%;
   text-align: justify;
 }
 
