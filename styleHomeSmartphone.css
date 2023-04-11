@@ -12,12 +12,16 @@ body {
   font-family: 'Kanit', sans-serif;
   font-size: 20px;
   font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 
 .Textos {
   color: black;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
+  color: black;
+  text-decoration: none;
 }
 
 .PrimeiroCarrocel {
@@ -31,7 +35,6 @@ body {
   height: 550px;
 }
 .containerNoticia {
-
   background-color: rgba(65, 214, 206, 0.349);
 }
 
@@ -218,7 +221,12 @@ ul {
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
 }
-.slide--description .TitulosCarrocel{
+.slide--description .Titulos2{
+  font-family: 'Kanit', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
   padding-top: 5%;
   text-align: center;
 }
@@ -245,6 +253,10 @@ ul {
   justify-items: flex-end;
   position: relative;
 }
+.Titulos a{
+  text-decoration: none;
+  color: black;
+}
 .PrimeiraNoticia {
   width: 100%;
   height: 50%;
@@ -257,7 +269,6 @@ ul {
   margin-left: 5%;
   justify-content: center;
   width: 90%;
-  height: 100%;
   text-align: justify;
 }
 .PrimeiraNoticiaDescricao .Titulos {
@@ -279,6 +290,10 @@ ul {
   width: 95%;
   height: 100%;
   text-align: justify;
+}
+.SegundaNoticiaDescricao .Titulos{
+  display: flex;
+  justify-content: center;
 }
 .Partead{
   display: flex;
@@ -308,12 +323,18 @@ ul {
   display: flex;
   margin-top: 2%;
 }
-.SegundaParteNoticiaFoto img {
+
+.SegundaParteNoticiaFoto{
   width: 50%;
 }
+
+.SegundaParteNoticiaFoto img {
+  width: 100%;
+}
 .SegundaParteNoticiaDescricao {
-  width: 80%;
+  width: 50%;
   padding-left: 5%;
+  padding-right: 5%;
   text-align: justify;
 }
 hr{
@@ -324,4 +345,11 @@ hr{
 }
 .DescriçãoDesktop{
   display: none;
+}
+.Titulos3{
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Kanit', sans-serif;
+  color: black;
+  text-decoration: none;
 }
