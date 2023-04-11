@@ -8,7 +8,6 @@ body {
 }
 
 .Mapa{
-  margin-top: 3%;
   background-color: blue;
   height: 500px;
 }
@@ -28,7 +27,6 @@ body {
 
 .PrimeiroCarrocel {
   width: 100%;
-  height: 150px;
 }
 
 .SegundoCarrocel {
@@ -320,7 +318,6 @@ ul {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 81%;
   margin-top: 10%;
 }
 
