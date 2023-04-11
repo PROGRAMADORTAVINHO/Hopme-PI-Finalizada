@@ -7,6 +7,12 @@ body {
   margin: 0 auto;
 }
 
+.Mapa{
+  margin-top: 3%;
+  background-color: blue;
+  height: 500px;
+}
+
 .Titulos {
   color: black;
   font-family: 'Kanit', sans-serif;
@@ -37,12 +43,12 @@ body {
 }
 
 /* Carrossel*/
-#slider1 {
+#slider {
   width: 100%;
   height: 50%;
 }
 
-#slider1 img {
+#slider img {
   opacity: 0;
   position: absolute;
   object-fit: cover;
@@ -51,7 +57,7 @@ body {
   transition: opacity 800ms;
 }
 
-#slider1 img.selected {
+#slider img.selected {
   opacity: 1;
 }
 
